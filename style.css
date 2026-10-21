@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #172554;
+    padding: 20px 8%;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #60a5fa;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+section {
+    padding: 65px 10%;
+    text-align: center;
+}
+
+.hero {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #dbeafe, #eff6ff);
+}
+
+.hero h1 {
+    font-size: 45px;
+    color: #1d4ed8;
+}
+
+.hero h3 {
+    margin: 10px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: #1e40af;
+}
+
+section h2 {
+    margin-bottom: 25px;
+    color: #1d4ed8;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px #00000015;
+    font-weight: bold;
+}
+
+.project-card {
+    background-color: white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #00000015;
+}
+
+#contact a {
+    color: #2563eb;
+}
+
+footer {
+    text-align: center;
+    background-color: #172554;
+    color: white;
+    padding: 20px;
+}
+
+/* Responsive design for mobile devices */
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+}
